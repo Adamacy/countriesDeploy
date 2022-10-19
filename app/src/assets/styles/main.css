@@ -1,0 +1,52 @@
+body {
+    background-color: #2e2d2b;
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@media screen and (max-width: 1920px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-left: -2%;
+    }
+}
+
+article img{
+    width:100%;
+}
+article {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 100px;
+}
+#detail {
+    width:80%;
+    height: 80vh;
+    float: left;
+    margin: 100px;
+    margin-left:200px;
+    font-size: larger;
+    color: white;
+}
+nav{
+    float:right;
+}
+section{
+    float:left;
+    margin-left: 100px;
+}
+a{
+    color: yellow;
+}
