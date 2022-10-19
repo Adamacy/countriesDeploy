@@ -71,7 +71,7 @@ export default defineComponent({
     methods: {
         getCountry() {
             let cca3 = this.$route.params.cca3
-            axios.get("https://restcountries.com/v2/all").then(res => {
+            axios.get("https://restcountries.com/v2/all").then((res: any) => {
                 res.data.forEach((element: any) => {
                     if (element.alpha3Code == cca3) {
                         this.data = element

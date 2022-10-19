@@ -36,7 +36,7 @@ export default defineComponent({
   },
   methods: {
     getCountries() {
-      axios.get("https://restcountries.com/v3.1/all").then(res => {
+      axios.get("https://restcountries.com/v3.1/all").then((res: any) => {
         this.countries = res.data
         res.data.forEach((element: any) => {
           console.log(element)
